@@ -1,0 +1,11 @@
+Color scheme:
+selection - 
+- bc5b4b (Chestnut Red)
+- 941e02 (Totem Red)
+- f25939 (Flamingo)
+- 909b41 (Light Green)
+- 478527 (Olive)
+- 2b3579 (Blue)
+- e6f2e6 (Landing Green Light mode)
+- 2d3a2d (Landing Green dark mode)
+
