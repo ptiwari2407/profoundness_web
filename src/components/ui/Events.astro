@@ -1,0 +1,17 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div class="flex items-center">
+  <span class="h-6 w-px bg-neutral-300 dark:bg-neutral-600 mx-4"></span>
+  <a
+    href="/events"
+    class={`text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 transition-colors text-base ${className}`}
+  >
+    Events
+  </a>
+</div>
