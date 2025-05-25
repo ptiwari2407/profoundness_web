@@ -1,0 +1,111 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Grief Coaching";
+const customDescription = "Find healing and support through your grief journey with compassionate and expert guidance";
+const customOgTitle = "Grief Coaching";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Grief Coaching</h1>
+      <p class="text-xl text-gray-600">
+        Navigate your grief journey with compassionate support and expert guidance
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Our Approach</h2>
+        <p class="text-gray-600 mb-4">
+          We provide a safe, supportive space for you to process your grief and find meaning in your loss. Our approach includes:
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Compassionate listening
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Emotional support
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Healing strategies
+          </li>
+        </ul>
+      </article>
+
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">What We Offer</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Compassionate support
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Grief processing techniques
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Coping strategies
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Healing journey guidance
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8">Grief Support Journey</h2>
+      <div class="space-y-6">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Initial Connection</h3>
+          <p class="text-gray-600">
+            Building trust and understanding your unique grief experience
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Processing & Healing</h3>
+          <p class="text-gray-600">
+            Working through emotions and finding meaning
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Moving Forward</h3>
+          <p class="text-gray-600">
+            Integrating loss and rebuilding your life
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Find Support</h2>
+      <p class="text-gray-600 mb-8">
+        Begin your healing journey with our compassionate grief coaches
+      </p>
+      <a href="/contact" class="inline-block bg-yellow-500 text-white px-6 py-4 rounded-lg hover:bg-yellow-600 transition-colors">
+        Schedule Consultation
+      </a>
+    </section>
+  </main>
+</MainLayout>

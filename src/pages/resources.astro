@@ -1,0 +1,65 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { resourcesData } from "@/data_files/nav/en/resources_link.ts";
+
+const title = "Resources";
+const customDescription = "Discover our collection of guides, blogs, and study materials for personal growth";
+const customOgTitle = "Resources";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Resources</h1>
+      <p class="text-xl text-gray-600">
+        Explore our collection of guides, blogs, and study materials to support your personal growth journey
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {resourcesData.map((resource) => (
+        <article class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h2 class="text-2xl font-semibold mb-4">{resource.title}</h2>
+          <p class="text-gray-600 mb-4">{resource.description}</p>
+          <a href={resource.url} class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+            Learn More
+          </a>
+        </article>
+      ))}
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold mb-8">Profoundness Factor</h2>
+      <div class="space-y-4">
+        <p class="text-gray-600">
+          Dive deeper into your personal growth journey with our comprehensive Profoundness Factor program. This exclusive resource helps you identify and work on the core aspects of your life that need transformation.
+        </p>
+        <a href="/profoundness/factor" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+          Explore Profoundness Factor
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold mb-8">Recommended Study Lists</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <article class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Personal Growth</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• The Power of Now - Eckhart Tolle</li>
+            <li>• Man's Search for Meaning - Viktor Frankl</li>
+            <li>• The 7 Habits of Highly Effective People - Stephen Covey</li>
+          </ul>
+        </article>
+        <article class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Mindfulness & Meditation</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Mindfulness in Plain English - Bhante Henepola Gunaratana</li>
+            <li>• Wherever You Go, There You Are - Jon Kabat-Zinn</li>
+            <li>• The Miracle of Mindfulness - Thich Nhat Hanh</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+</Layout>

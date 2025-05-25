@@ -1,0 +1,111 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Parent Counselling";
+const customDescription = "Transform your parenting journey with expert guidance and support. Create a nurturing home environment";
+const customOgTitle = "Parent Counselling";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Parent Counselling</h1>
+      <p class="text-xl text-gray-600">
+        Create a nurturing home environment with expert parenting guidance
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Our Approach</h2>
+        <p class="text-gray-600 mb-4">
+          We provide compassionate and practical guidance to help you become the parent you aspire to be. Our approach includes:
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Positive parenting strategies
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Communication skills
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Emotional intelligence
+          </li>
+        </ul>
+      </article>
+
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">What We Offer</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            One-on-one parenting coaching
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Family communication workshops
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Parent-child relationship building
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Conflict resolution strategies
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8">Parenting Journey</h2>
+      <div class="space-y-6">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Understanding</h3>
+          <p class="text-gray-600">
+            Understanding your child's needs and development
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Connection</h3>
+          <p class="text-gray-600">
+            Building strong parent-child relationships
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Growth</h3>
+          <p class="text-gray-600">
+            Supporting both your and your child's development
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Transform Your Parenting</h2>
+      <p class="text-gray-600 mb-8">
+        Begin your journey to becoming the parent you aspire to be
+      </p>
+      <a href="/contact" class="inline-block bg-blue-500 text-white px-8 py-4 rounded-lg hover:bg-blue-600 transition-colors">
+        Schedule Consultation
+      </a>
+    </section>
+  </main>
+</MainLayout>

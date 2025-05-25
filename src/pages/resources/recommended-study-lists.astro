@@ -1,0 +1,124 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Recommended Study Lists";
+const customDescription = "Curated study lists for personal growth and transformation";
+const customOgTitle = "Recommended Study Lists";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-16">
+      <h1 class="text-4xl font-bold mb-4">Recommended Study Lists</h1>
+      <p class="text-xl text-gray-600">
+        Curated collections of resources for your personal growth journey
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">Personal Growth</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            The Power of Now - Eckhart Tolle
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Man's Search for Meaning - Viktor Frankl
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            The 7 Habits of Highly Effective People - Stephen Covey
+          </li>
+        </ul>
+      </article>
+
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">Mental Health</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Feeling Good - David D. Burns
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            The Anxiety and Phobia Workbook - Edmund J. Bourne
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Mind Over Mood - Dennis Greenberger
+          </li>
+        </ul>
+      </article>
+
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">Spirituality</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            A New Earth - Eckhart Tolle
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            The Tao Te Ching - Lao Tzu
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            The Bhagavad Gita
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8">Study List Categories</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="/resources/study-lists/personal-growth" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Personal Growth</h3>
+          <p class="text-gray-600">Resources for self-improvement</p>
+        </a>
+        <a href="/resources/study-lists/mental-health" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Mental Health</h3>
+          <p class="text-gray-600">Resources for mental well-being</p>
+        </a>
+        <a href="/resources/study-lists/spirituality" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Spirituality</h3>
+          <p class="text-gray-600">Resources for spiritual growth</p>
+        </a>
+        <a href="/resources/study-lists/life-coaching" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Life Coaching</h3>
+          <p class="text-gray-600">Resources for coaching</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Contribute to Study Lists</h2>
+      <p class="text-gray-600 mb-8">
+        Help us build comprehensive study lists for personal growth
+      </p>
+      <a href="/contact" class="inline-block bg-yellow-500 text-white px-8 py-4 rounded-lg hover:bg-yellow-600 transition-colors">
+        Contribute Now
+      </a>
+    </section>
+  </main>
+</MainLayout>

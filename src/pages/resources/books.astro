@@ -1,0 +1,103 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Books";
+const customDescription = "Discover our curated collection of books for personal growth and transformation";
+const customOgTitle = "Books";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-16">
+      <h1 class="text-4xl font-bold mb-4">Books</h1>
+      <p class="text-xl text-gray-600">
+        Curated collection of books for your personal growth journey
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <img 
+          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop"
+          alt="The Power of Now"
+          class="w-full h-48 object-cover rounded-lg mb-4"
+          loading="lazy"
+        />
+        <h2 class="text-2xl font-semibold mb-4">The Power of Now</h2>
+        <p class="text-gray-600 mb-4">Eckhart Tolle</p>
+        <p class="text-gray-600 mb-4">
+          A guide to enlightenment and living in the present moment
+        </p>
+        <a href="/books/power-of-now" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors">
+          Learn More
+        </a>
+      </article>
+
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <img 
+          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop"
+          alt="Man's Search for Meaning"
+          class="w-full h-48 object-cover rounded-lg mb-4"
+          loading="lazy"
+        />
+        <h2 class="text-2xl font-semibold mb-4">Man's Search for Meaning</h2>
+        <p class="text-gray-600 mb-4">Viktor Frankl</p>
+        <p class="text-gray-600 mb-4">
+          A powerful exploration of finding purpose in life
+        </p>
+        <a href="/books/mans-search-for-meaning" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors">
+          Learn More
+        </a>
+      </article>
+
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <img 
+          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop"
+          alt="The 7 Habits of Highly Effective People"
+          class="w-full h-48 object-cover rounded-lg mb-4"
+          loading="lazy"
+        />
+        <h2 class="text-2xl font-semibold mb-4">The 7 Habits of Highly Effective People</h2>
+        <p class="text-gray-600 mb-4">Stephen Covey</p>
+        <p class="text-gray-600 mb-4">
+          Timeless principles for personal and professional success
+        </p>
+        <a href="/books/7-habits" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors">
+          Learn More
+        </a>
+      </article>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8">Categories</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="/books/category/personal-growth" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Personal Growth</h3>
+          <p class="text-gray-600">Books on self-improvement and development</p>
+        </a>
+        <a href="/books/category/spirituality" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Spirituality</h3>
+          <p class="text-gray-600">Books on spiritual growth and enlightenment</p>
+        </a>
+        <a href="/books/category/mental-health" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Mental Health</h3>
+          <p class="text-gray-600">Books on mental well-being and therapy</p>
+        </a>
+        <a href="/books/category/life-coaching" class="p-4 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-2">Life Coaching</h3>
+          <p class="text-gray-600">Books on coaching and personal transformation</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Recommend a Book</h2>
+      <p class="text-gray-600 mb-8">
+        Share your favorite books with our community
+      </p>
+      <a href="/contact" class="inline-block bg-yellow-500 text-white px-8 py-4 rounded-lg hover:bg-yellow-600 transition-colors">
+        Recommend a Book
+      </a>
+    </section>
+  </main>
+</MainLayout>

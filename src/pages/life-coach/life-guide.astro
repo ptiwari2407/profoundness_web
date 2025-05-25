@@ -1,0 +1,111 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Life Guide";
+const customDescription = "Navigate your life's journey with expert guidance. Discover your purpose and create a fulfilling life";
+const customOgTitle = "Life Guide";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Life Guide</h1>
+      <p class="text-xl text-gray-600">
+        Navigate your life's journey with expert guidance and support
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Our Approach</h2>
+        <p class="text-gray-600 mb-4">
+          We help you create a roadmap for your life journey through:
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Life purpose discovery
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Goal setting
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Personal growth planning
+          </li>
+        </ul>
+      </article>
+
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">What We Offer</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Life coaching sessions
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Goal setting support
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Personal development
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Life strategy planning
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8">Life Journey</h2>
+      <div class="space-y-6">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Discovery</h3>
+          <p class="text-gray-600">
+            Understanding your life purpose and values
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Planning</h3>
+          <p class="text-gray-600">
+            Creating actionable goals and strategies
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Growth</h3>
+          <p class="text-gray-600">
+            Continuous learning and personal development
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Create Your Life Map</h2>
+      <p class="text-gray-600 mb-8">
+        Begin your journey to a more purposeful and fulfilling life
+      </p>
+      <a href="/contact" class="inline-block bg-yellow-500 text-white px-6 py-4 rounded-lg hover:bg-yellow-600 transition-colors">
+        Schedule Consultation
+      </a>
+    </section>
+  </main>
+</MainLayout>
