@@ -36,6 +36,12 @@ export const servicesData = [
       icon: "community",
       url: "/life-coach/life-guide",
     },
+    {
+      title: "Dispute Settlement/Mediation",
+      description: "Resolve conflicts and find peaceful solutions through expert mediation and conflict resolution techniques",
+      icon: "sparks",
+      url: "/life-coach/dispute-settlement-mediation",
+    },
   ];
   
   export const profoundnessFactorData = [
