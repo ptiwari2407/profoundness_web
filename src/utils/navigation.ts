@@ -1,9 +1,10 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "Home", url: "/" },
+  { name: "About", url: "/" },
   { name: "Creativity Coach", url: "/products" },
   { name: "Life Coach", url: "/services" },
-  { name: "Resources", url: "/blog" },
+  { name: "Vision", url: "/vision" },
+  { name: "Resources", url: "/resources" },
   { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
