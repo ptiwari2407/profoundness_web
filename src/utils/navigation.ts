@@ -2,7 +2,7 @@
 const navBarLinks = [
   { name: "About", url: "/" },
   { name: "Creativity Coach", url: "/products" },
-  { name: "Life Coach", url: "/services" },
+  { name: "Life Coach", url: "/life-coach" },
   { name: "Vision", url: "/vision" },
   { name: "Resources", url: "/resources" },
   { name: "Contact", url: "/contact" },

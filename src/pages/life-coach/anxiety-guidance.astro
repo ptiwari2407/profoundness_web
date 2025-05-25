@@ -1,0 +1,111 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Anxiety Guidance";
+const customDescription = "Get expert guidance to manage and overcome anxiety through personalized coaching and proven techniques";
+const customOgTitle = "Anxiety Guidance";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Anxiety Guidance</h1>
+      <p class="text-xl text-gray-600">
+        Transform your relationship with anxiety through expert guidance and personalized support
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">What You Get</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Personalized anxiety management plan
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Coping strategies and techniques
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Mindfulness practices
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Weekly check-ins and support
+          </li>
+        </ul>
+      </article>
+
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Our Approach</h2>
+        <p class="text-gray-600 mb-4">
+          Our anxiety guidance program focuses on empowering you to take control of your anxiety. We use evidence-based techniques combined with personalized coaching to help you:
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Identify anxiety triggers and patterns
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Develop coping strategies
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Build emotional resilience
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8">How It Works</h2>
+      <div class="space-y-6">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Initial Assessment</h3>
+          <p class="text-gray-600">
+            We start with a comprehensive assessment to understand your specific anxiety patterns and triggers
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Personalized Plan</h3>
+          <p class="text-gray-600">
+            Based on your assessment, we create a tailored plan that addresses your unique needs and goals
+          </p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-4">Ongoing Support</h3>
+          <p class="text-gray-600">
+            Regular sessions to monitor progress and adjust strategies as needed
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Ready to Start Your Journey?</h2>
+      <p class="text-gray-600 mb-8">
+        Take the first step towards managing your anxiety. Schedule a consultation with one of our expert coaches today
+      </p>
+      <a href="/contact" class="inline-block bg-yellow-500 text-white px-6 py-4 rounded-lg hover:bg-yellow-600 transition-colors">
+        Schedule Consultation
+      </a>
+    </section>
+  </main>
+</MainLayout>

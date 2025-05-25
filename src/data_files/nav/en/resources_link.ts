@@ -2,30 +2,27 @@
 export const resourcesData = [
   {
     title: "Inner Circle",
-    description:
-      "Dive deep into helpful guides and explanations for all of ScrewFast's features",
+    description: "Join our exclusive community for personal growth and transformation",
     icon: "guides",
-    url: "#",
+    url: "/resources/inner-circle",
   },
   {
     title: "Blog",
-    description:
-      "Supercharge Your Workflow. Seamless integrations with all your favorite tools",
+    description: "Explore our collection of articles on personal growth and transformation",
     icon: "puzzle",
-    url: "#",
+    url: "/resources/blog",
   },
   {
     title: "Books",
-    description: "Go beyond tools with ScrewFast's expert services",
+    description: "Discover our curated collection of books for personal growth",
     icon: "rocket",
-    url: "#",
+    url: "/resources/books",
   },
   {
     title: "Recommended Study Lists",
-    description:
-      "Build Smarter, Faster. Experience next-level efficiency with ScrewFast's cutting-edge construction tools",
+    description: "Curated study lists for personal growth and transformation",
     icon: "hammer",
-    url: "#",
+    url: "/resources/recommended-study-lists",
   },
 
 ];

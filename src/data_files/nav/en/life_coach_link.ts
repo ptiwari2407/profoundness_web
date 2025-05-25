@@ -2,43 +2,39 @@
 export const servicesData = [
     {
       title: "Anxiety Guidance",
-      description:
-        "Dive deep into helpful guides and explanations for all of ScrewFast's features",
+      description: "Get expert guidance to manage and overcome anxiety through personalized coaching and proven techniques",
       icon: "guides",
-      url: "#",
+      url: "/life-coach/anxiety-guidance",
     },
     {
       title: "Addiction Coaching",
-      description:
-        "Supercharge Your Workflow. Seamless integrations with all your favorite tools",
+      description: "Transform your life with expert addiction coaching. Break free from harmful patterns and build a healthier future",
       icon: "puzzle",
-      url: "#",
+      url: "/life-coach/addiction-coaching",
     },
     {
       title: "Grief Coaching",
-      description: "Go beyond tools with ScrewFast's expert services",
+      description: "Find healing and support through your grief journey with compassionate and expert guidance",
       icon: "rocket",
-      url: "#",
+      url: "/life-coach/grief-coaching",
     },
     {
       title: "Spiritual Core Guidance",
-      description:
-        "Build Smarter, Faster. Experience next-level efficiency with ScrewFast's cutting-edge construction tools",
+      description: "Discover your spiritual path and inner wisdom with expert guidance and support",
       icon: "hammer",
-      url: "#",
+      url: "/life-coach/spiritual-core-guidance",
     },
     {
-      title: "Parent Counselling",
-      description:
-        "Boost your efficiency with ScrewFast's straightforward, value-driven plans",
+      title: "Childhood Development & Parenting",
+      description: "Transform your parenting journey with expert guidance and support. Create a nurturing home environment",
       icon: "sparks",
-      url: "#",
+      url: "/life-coach/childhood-development-parenting",
     },
     {
       title: "Life Guide",
-      description: "Learn, share, and connect with other ScrewFast users",
+      description: "Navigate your life's journey with expert guidance. Discover your purpose and create a fulfilling life",
       icon: "community",
-      url: "#",
+      url: "/life-coach/life-guide",
     },
   ];
   

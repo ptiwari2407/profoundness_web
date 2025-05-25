@@ -1,0 +1,74 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Creativity Coach";
+const customDescription = "Unlock your creative potential with our expert coaching services";
+const customOgTitle = "Creativity Coach";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Creativity Coach</h1>
+      <p class="text-xl text-gray-600">
+        Unleash your creative potential and transform your life through artistic expression
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Creative Exploration</h2>
+        <p class="text-gray-600">
+          Discover new ways to express yourself through various artistic mediums. Our coaches help you explore different creative paths and find what resonates with you.
+        </p>
+      </article>
+
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Mindfulness & Creativity</h2>
+        <p class="text-gray-600">
+          Learn how to tap into your creative flow through mindfulness practices. Our programs combine meditation with creative expression for a holistic approach.
+        </p>
+      </article>
+
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Creative Block Solutions</h2>
+        <p class="text-gray-600">
+          Struggling with creative blocks? Our coaches provide personalized strategies to overcome obstacles and maintain your creative momentum.
+        </p>
+      </article>
+
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Creative Business Development</h2>
+        <p class="text-gray-600">
+          Turn your creative passion into a sustainable career. We help artists and creatives build successful businesses while staying true to their artistic vision.
+        </p>
+      </article>
+
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Creative Community</h2>
+        <p class="text-gray-600">
+          Join our vibrant community of artists and creatives. Connect with like-minded individuals, share your work, and receive support and inspiration.
+        </p>
+      </article>
+
+      <article class="p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold mb-4">Personalized Coaching</h2>
+        <p class="text-gray-600">
+          Receive one-on-one coaching tailored to your unique creative journey. Our experienced coaches help you set and achieve your creative goals.
+        </p>
+      </article>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold mb-8">Get Started Today</h2>
+      <div class="space-y-4">
+        <p class="text-gray-600">
+          Ready to unlock your creative potential? Contact us to schedule a consultation and begin your creative transformation journey.
+        </p>
+        <a href="/contact" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+          Schedule Consultation
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

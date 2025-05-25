@@ -1,0 +1,151 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const title = "Inner Circle";
+const customDescription = "Join our exclusive community of personal growth enthusiasts and access premium resources";
+const customOgTitle = "Inner Circle";
+---
+
+<MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="text-center mb-16">
+      <h1 class="text-4xl font-bold mb-4">Inner Circle</h1>
+      <p class="text-xl text-gray-600">
+        Join our exclusive community for personal growth and transformation
+      </p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">What You Get</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Exclusive content and resources
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Private community access
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Priority support and coaching
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Monthly live sessions
+          </li>
+        </ul>
+      </article>
+
+      <article class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+        <h2 class="text-2xl font-semibold mb-4">Community Benefits</h2>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Connect with like-minded individuals
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Share experiences and insights
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Collaborative learning opportunities
+          </li>
+          <li class="flex items-center">
+            <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            Support network
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold mb-8">Membership Plans</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-4">Monthly Plan</h3>
+          <p class="text-2xl font-bold mb-4">$49/month</p>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Full access to community
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Monthly sessions
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Priority support
+            </li>
+          </ul>
+          <a href="/contact" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition-colors mt-4">
+            Join Monthly
+          </a>
+        </div>
+
+        <div class="p-6 bg-yellow-50/60 rounded-lg shadow hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-4">Annual Plan</h3>
+          <p class="text-2xl font-bold mb-4">$499/year</p>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              All monthly benefits
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              25% discount
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-yellow-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Bonus content
+            </li>
+          </ul>
+          <a href="/contact" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-600 transition-colors mt-4">
+            Join Annual
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Join Our Community</h2>
+      <p class="text-gray-600 mb-8">
+        Take the first step towards personal growth and transformation
+      </p>
+      <a href="/contact" class="inline-block bg-yellow-500 text-white px-8 py-4 rounded-lg hover:bg-yellow-600 transition-colors">
+        Join Inner Circle
+      </a>
+    </section>
+  </main>
+</MainLayout>
