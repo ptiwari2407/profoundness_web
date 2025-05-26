@@ -1,6 +1,5 @@
 ---
 //Import relevant dependencies
-import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import MegaMenuLink from "@components/ui/links/MegaMenuLink.astro";
 import Events from "@components/ui/Events.astro";
@@ -72,10 +71,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
           </svg>
         </button>
       </div>
-      <!-- ThemeIcon component specifically for smaller screens -->
-      <span class="inline-block md:hidden">
-        <ThemeIcon />
-      </span>
+      <!-- ThemeIcon removed -->
     </div>
     <!-- Contains navigation links -->
     <div
@@ -99,10 +95,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
 
         <Events />
         <LanguagePicker />
-        <!-- ThemeIcon component specifically for larger screens -->
-        <span class="hidden md:inline-block">
-          <ThemeIcon />
-        </span>
+        <!-- ThemeIcon removed -->
       </div>
     </div>
   </nav>
