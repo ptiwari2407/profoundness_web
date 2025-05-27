@@ -1,12 +1,44 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSlider from "@/components/sections/HeroSlider.astro";
 
-const title = "Dispute Settlement/Mediation";
-const customDescription = "Expert mediation services to resolve disputes and conflicts through constructive dialogue and mutual understanding";
-const customOgTitle = "Dispute Settlement/Mediation Services";
+const title = "Dispute Settlement & Mediation";
+const customDescription = "Professional dispute resolution and mediation services to help resolve conflicts and rebuild relationships";
+const customOgTitle = "Dispute Settlement & Mediation";
+
+// Hero slider images
+const heroSlides = [
+  {
+    id: 1,
+    imgSrc: "https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Resolve Conflicts",
+    subtitle: "Professional mediation for lasting solutions",
+    btnText: "Learn more",
+    btnLink: "#services"
+  },
+  {
+    id: 2,
+    imgSrc: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Rebuild Relationships",
+    subtitle: "Heal and strengthen connections through mediation",
+    btnText: "Our approach",
+    btnLink: "#approach"
+  },
+  {
+    id: 3,
+    imgSrc: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Find Common Ground",
+    subtitle: "Navigate disputes with expert guidance",
+    btnText: "Get started",
+    btnLink: "/contact"
+  }
+];
 ---
 
 <MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <!-- Hero Section with Image Slider -->
+  <HeroSlider slides={heroSlides} category="DISPUTE SETTLEMENT & MEDIATION" />
+  
   <main class="max-w-6xl mx-auto px-4 py-8">
     <section class="relative h-[400px] mb-16">
       <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-90"></div>

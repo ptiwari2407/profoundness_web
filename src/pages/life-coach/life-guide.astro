@@ -1,12 +1,44 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSlider from "@/components/sections/HeroSlider.astro";
 
 const title = "Life Guide";
 const customDescription = "Navigate your life's journey with expert guidance. Discover your purpose and create a fulfilling life";
 const customOgTitle = "Life Guide";
+
+// Hero slider images
+const heroSlides = [
+  {
+    id: 1,
+    imgSrc: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Find Your Path",
+    subtitle: "Navigate life's journey with expert guidance",
+    btnText: "Learn more",
+    btnLink: "#services"
+  },
+  {
+    id: 2,
+    imgSrc: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Discover Purpose",
+    subtitle: "Uncover your true potential and direction",
+    btnText: "Our approach",
+    btnLink: "#approach"
+  },
+  {
+    id: 3,
+    imgSrc: "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Transform Your Life",
+    subtitle: "Create the fulfilling life you deserve",
+    btnText: "Get started",
+    btnLink: "/contact"
+  }
+];
 ---
 
 <MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <!-- Hero Section with Image Slider -->
+  <HeroSlider slides={heroSlides} category="LIFE GUIDE" />
+  
   <main class="max-w-6xl mx-auto px-4 py-8">
     <section class="text-center mb-12">
       <h1 class="text-4xl font-bold mb-4">Life Guide</h1>
