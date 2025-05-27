@@ -1,12 +1,44 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSlider from "@/components/sections/HeroSlider.astro";
 
 const title = "Addiction Coaching";
 const customDescription = "Transform your life with expert addiction coaching. Break free from harmful patterns and build a healthier future";
 const customOgTitle = "Addiction Coaching";
+
+// Hero slider images
+const heroSlides = [
+  {
+    id: 1,
+    imgSrc: "https://images.unsplash.com/photo-1569437061241-a848be43cc82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Break Free from Addiction",
+    subtitle: "Start your journey to recovery and freedom",
+    btnText: "Learn more",
+    btnLink: "#services"
+  },
+  {
+    id: 2,
+    imgSrc: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Personalized Support",
+    subtitle: "Tailored coaching for your unique situation",
+    btnText: "Our approach",
+    btnLink: "#approach"
+  },
+  {
+    id: 3,
+    imgSrc: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    title: "Rebuild Your Life",
+    subtitle: "Create a healthier, more fulfilling future",
+    btnText: "Get started",
+    btnLink: "/contact"
+  }
+];
 ---
 
 <MainLayout title={title} customDescription={customDescription} customOgTitle={customOgTitle}>
+  <!-- Hero Section with Image Slider -->
+  <HeroSlider slides={heroSlides} category="ADDICTION COACHING" />
+  
   <main class="max-w-6xl mx-auto px-4 py-8">
     <section class="text-center mb-12">
       <h1 class="text-4xl font-bold mb-4">Addiction Coaching</h1>
