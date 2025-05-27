@@ -1,0 +1,215 @@
+---
+//Import relevant dependencies
+import NavLink from "@components/ui/links/NavLink.astro";
+import MegaMenuLink from "@components/ui/links/MegaMenuLink.astro";
+import Events from "@components/ui/Events.astro";
+import enStrings from "@utils/navigation.ts";
+import frStrings from "@utils/fr/navigation.ts";
+import BrandLogo from "@components/BrandLogo.astro";
+import LanguagePicker from "@components/ui/LanguagePicker.astro";
+
+// Select the correct translation based on the page's lang prop:
+const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
+const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+---
+
+<!-- Main header component - fixed to top -->
+<header
+  class="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-md dark:bg-neutral-900"
+>
+  <!-- Navigation container -->
+  <nav
+    class="container mx-auto flex items-center justify-between px-4 py-3 md:px-6 lg:px-8"
+    aria-label="Global"
+  >
+    <div class="flex items-center">
+      <!-- Brand logo -->
+      <a
+        class="flex-none rounded-lg text-xl font-bold outline-hidden ring-zinc-500 focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden"
+        href={homeUrl}
+        aria-label="Brand"
+      >
+        <BrandLogo class="h-auto w-24" />
+      </a>
+    </div>
+
+    <!-- Collapse toggle for smaller screens -->
+    <div class="block md:hidden">
+      <button
+        type="button"
+        class="hs-collapse-toggle flex h-10 w-10 items-center justify-center rounded-full text-sm font-bold text-neutral-600 transition duration-300 hover:bg-neutral-200 disabled:pointer-events-none disabled:opacity-50 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:outline-hidden"
+        data-hs-collapse="#navbar-sticky-collapse"
+        aria-controls="navbar-sticky-collapse"
+        aria-label="Toggle navigation"
+      >
+        <svg
+          class="h-6 w-6 shrink-0 hs-collapse-open:hidden"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" x2="21" y1="6" y2="6"></line>
+          <line x1="3" x2="21" y1="12" y2="12"></line>
+          <line x1="3" x2="21" y1="18" y2="18"></line>
+        </svg>
+        <svg
+          class="hidden h-6 w-6 shrink-0 hs-collapse-open:block"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Contains navigation links -->
+    <div
+      id="navbar-sticky-collapse"
+      class="hs-collapse hidden w-full overflow-hidden transition-all duration-300 md:block md:w-auto"
+    >
+      <!-- Navigation links container -->
+      <div
+        class="mt-5 flex flex-col gap-y-4 border-t border-gray-200 pt-5 md:mt-0 md:flex-row md:items-center md:gap-x-7 md:border-t-0 md:pt-0"
+      >
+        <!-- Navigation links and Authentication component -->
+        {
+          strings.navBarLinks.map((link) => {
+            if (link.name === "Life Coach" || link.name === "Resources") {
+              return <MegaMenuLink name={link.name} />;
+            } else {
+              return <NavLink url={link.url} name={link.name} />;
+            }
+          })
+        }
+
+        <Events />
+        <LanguagePicker />
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Add padding to body to prevent content from being hidden under the fixed navbar -->
+<style is:global>
+  body {
+    padding-top: 4rem; /* Adjust based on your navbar height */
+  }
+</style>
+
+<!-- Theme Appearance script to manage light/dark modes -->
+<script is:inline>
+  const HSThemeAppearance = {
+    init() {
+      const defaultTheme = "default";
+      let theme = localStorage.getItem("hs_theme") || defaultTheme;
+
+      if (document.querySelector("html").classList.contains("dark")) return;
+      this.setAppearance(theme);
+    },
+    _resetStylesOnLoad() {
+      const $resetStyles = document.createElement("style");
+      $resetStyles.innerText = `*{transition: unset !important;}`;
+      $resetStyles.setAttribute("data-hs-appearance-onload-styles", "");
+      document.head.appendChild($resetStyles);
+      return $resetStyles;
+    },
+    setAppearance(theme, saveInStore = true, dispatchEvent = true) {
+      const $resetStylesEl = this._resetStylesOnLoad();
+
+      if (saveInStore) {
+        localStorage.setItem("hs_theme", theme);
+      }
+
+      if (theme === "auto") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "default";
+      }
+
+      document.querySelector("html").classList.remove("dark");
+      document.querySelector("html").classList.remove("default");
+      document.querySelector("html").classList.remove("auto");
+
+      document
+        .querySelector("html")
+        .classList.add(this.getOriginalAppearance());
+
+      setTimeout(() => {
+        $resetStylesEl.remove();
+      });
+
+      if (dispatchEvent) {
+        window.dispatchEvent(
+          new CustomEvent("on-hs-appearance-change", { detail: theme })
+        );
+      }
+    },
+    getAppearance() {
+      let theme = this.getOriginalAppearance();
+      if (theme === "auto") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "default";
+      }
+      return theme;
+    },
+    getOriginalAppearance() {
+      const defaultTheme = "default";
+      return localStorage.getItem("hs_theme") || defaultTheme;
+    },
+  };
+  HSThemeAppearance.init();
+
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", () => {
+      if (HSThemeAppearance.getOriginalAppearance() === "auto") {
+        HSThemeAppearance.setAppearance("auto", false);
+      }
+    });
+
+  window.addEventListener("load", () => {
+    const $clickableThemes = document.querySelectorAll(
+      "[data-hs-theme-click-value]"
+    );
+    const $switchableThemes = document.querySelectorAll(
+      "[data-hs-theme-switch]"
+    );
+
+    $clickableThemes.forEach(($item) => {
+      $item.addEventListener("click", () =>
+        HSThemeAppearance.setAppearance(
+          $item.getAttribute("data-hs-theme-click-value"),
+          true,
+          $item
+        )
+      );
+    });
+
+    $switchableThemes.forEach(($item) => {
+      $item.addEventListener("change", (e) => {
+        HSThemeAppearance.setAppearance(e.target.checked ? "dark" : "default");
+      });
+
+      $item.checked = HSThemeAppearance.getAppearance() === "dark";
+    });
+
+    window.addEventListener("on-hs-appearance-change", (e) => {
+      $switchableThemes.forEach(($item) => {
+        $item.checked = e.detail === "dark";
+      });
+    });
+  });
+</script>
