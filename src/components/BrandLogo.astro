@@ -7,7 +7,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-<div {...Astro.props} class="flex items-center gap-2">
-  <span class="text-2xl font-bold text-[#2d3a2d] dark:text-yellow-400" style="font-family: 'Lato', sans-serif;">LIFE</span>
-  <span class="text-2xl font-bold text-[#f25939] dark:text-[#478527]" style="font-family: 'Lato', sans-serif;">PROFOUNDNESS</span>
+<div {...Astro.props} class="flex items-center">
+  <div class="relative">
+    <!-- Always visible lion logo -->
+    <img 
+      src="/images/lion_logo_compact.svg" 
+      alt="Lion Logo" 
+      class="h-10 w-10" 
+      width="80" 
+      height="80"
+    />
+    <!-- Text that shows only on large screens when there's enough space -->
+    <div class="hidden xl:flex items-center absolute left-full top-1/2 -translate-y-1/2 whitespace-nowrap -ml-10">
+      <span class="text-lg font-bold text-[#2d3a2d] dark:text-yellow-400" style="font-family: 'Lato', sans-serif;">LIFE</span>
+      <span class="text-lg font-bold text-[#f25939] dark:text-[#478527] ml-1" style="font-family: 'Lato', sans-serif;">PROFOUNDNESS</span>
+    </div>
+  </div>
 </div>
