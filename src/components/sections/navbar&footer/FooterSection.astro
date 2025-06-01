@@ -24,8 +24,11 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
   >
     <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
       <div class="col-span-full lg:col-span-1">
-        <!-- Brand Logo -->
-        <BrandLogo class="h-auto w-32" />
+        <!-- Brand Name -->
+        <div class="flex flex-col">
+          <span class="text-lg font-bold text-[#2d3a2d] dark:text-yellow-400" style="font-family: 'Lato', sans-serif;">LIFE</span>
+          <span class="text-lg font-bold text-[#f25939] dark:text-[#478527]" style="font-family: 'Lato', sans-serif;">PROFOUNDNESS</span>
+        </div>
       </div>
       <!-- An array of links for Product and Company sections -->
       {
