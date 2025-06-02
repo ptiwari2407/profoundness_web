@@ -28,12 +28,18 @@ function getAccordionClass(first: boolean = false) {
     class="hs-accordion-toggle group inline-flex w-full items-center justify-between gap-x-3 text-balance rounded-lg pb-3 text-start font-bold text-neutral-800 outline-hidden ring-zinc-500 transition hover:text-neutral-500 focus-visible:ring-3 dark:text-neutral-200 dark:ring-zinc-200 dark:hover:text-neutral-400 dark:focus:outline-hidden md:text-lg"
     aria-controls={collapseId}
   >
-    {question}
-    <!-- SVG Icon that is shown when the accordion is NOT active -->
-    <Icon name="accordionNotActive" />
-
-    <!-- SVG Icon that is shown when the accordion is active -->
-    <Icon name="accordionActive" />
+    <span class="flex-1 text-left">{question}</span>
+    <div class="flex-shrink-0 ml-4">
+      <!-- Plus icon when collapsed -->
+      <svg class="hs-accordion-active:hidden w-5 h-5 text-gray-500 group-hover:text-blue-600 transition-colors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+      <!-- Minus icon when expanded -->
+      <svg class="hs-accordion-active:block hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+      </svg>
+    </div>
   </button>
   <!-- The collapsible content of the accordion -->
   <div
