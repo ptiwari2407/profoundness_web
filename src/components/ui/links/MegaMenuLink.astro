@@ -120,7 +120,9 @@ const { name } = Astro.props;
       <div class="mx-1 flex flex-col pt-4 md:mx-0 md:pt-0">
         <span
           class="text-sm font-semibold uppercase text-neutral-800 dark:text-neutral-200"
-          >{name === "Life Coach" ? "Profoundness Factor" : "Resources Hub"}</span
+          >{name === "Life Coach" ? <>
+            The <span class="text-orange-400 dark:text-orange-300">Profoundness</span> Framework
+          </> : "Resources Hub"}</span
         >
         <a
           class="group mt-2 flex items-center gap-x-5 rounded-xl p-3 hover:bg-neutral-100 dark:hover:bg-neutral-500/10"
