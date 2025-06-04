@@ -1,0 +1,29 @@
+{
+  "subTitle": "Frequently Asked Questions About Employee Health Coaching",
+  "faqs": [
+    {
+      "question": "What is employee health coaching?",
+      "answer": "Employee health coaching is a personalized approach to improving workplace wellbeing. It focuses on helping employees develop sustainable health habits, manage stress, and create a better work-life balance, ultimately leading to improved productivity and job satisfaction."
+    },
+    {
+      "question": "How can health coaching benefit my organization?",
+      "answer": "Health coaching can significantly reduce healthcare costs, lower absenteeism, improve employee engagement, and boost overall productivity. Organizations with robust wellness programs often see improved morale, better team dynamics, and a stronger company culture."
+    },
+    {
+      "question": "What does a typical coaching session include?",
+      "answer": "Each session is tailored to individual needs but typically includes goal setting, progress review, education on health topics, and developing personalized strategies. Sessions may cover stress management, ergonomics, nutrition, exercise, and work-life integration."
+    },
+    {
+      "question": "How long does the coaching program last?",
+      "answer": "Programs typically range from 3 to 6 months, with weekly or bi-weekly sessions. The duration can be adjusted based on organizational needs and employee goals. Many employees see meaningful results within the first 4-6 weeks."
+    },
+    {
+      "question": "Is employee health coaching confidential?",
+      "answer": "Yes, all coaching sessions are completely confidential. While we provide aggregate data to the organization about program participation and general outcomes, individual employee information is never shared without explicit consent."
+    },
+    {
+      "question": "How do you measure the success of the program?",
+      "answer": "We use a combination of quantitative metrics (like participation rates, health risk assessments, and productivity measures) and qualitative feedback. Many organizations see measurable improvements in employee engagement scores, reduced healthcare claims, and positive feedback from participants."
+    }
+  ]
+}

@@ -5,6 +5,8 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import type { ImageMetadata } from 'astro';
 import blueprints from "@images/blueprints-image.avif";
 import personWorking from "@images/person-working.avif";
+import FAQ from "@/components/sections/misc/FAQ.astro";
+import employeeHealthFAQs from "@/data_files/life_coachFAQs/employeeHealthFAQs.json";
 
 // Type assertion for the image imports
 const blueprintsImage = blueprints as unknown as ImageMetadata;
@@ -332,5 +334,10 @@ const heroSlides = [
         </div>
       </div>
     </section>
+    <!-- FAQ Section -->
+    <FAQ 
+      title="<span class='text-[#2d3a2d] dark:text-yellow-400'>Frequently</span> <span class='text-[#f25939] dark:text-[#478527]'>asked questions</span>" 
+      faqs={employeeHealthFAQs} 
+    />
   </main>
 </MainLayout>
