@@ -1,6 +1,12 @@
 // Define data structures for services and success stories
 export const servicesData = [
     {
+      title: "Employee Health Coaching",
+      description: "Enhance workplace wellbeing and productivity through personalized health coaching for employees",
+      icon: "community",
+      url: "/life-coach/employee-health-coaching",
+    },
+    {
       title: "Anxiety Guidance",
       description: "Get expert guidance to manage and overcome anxiety through personalized coaching and proven techniques",
       icon: "guides",
@@ -20,7 +26,7 @@ export const servicesData = [
     },
     {
       title: "Spiritual Core Guidance",
-      description: "Discover your spiritual path and inner wisdom with expert guidance and support",
+      description: "Know your inner self and the purpose of your life with expert guidance and support. Witness the chnage in quality of life.",
       icon: "hammer",
       url: "/life-coach/spiritual-core-guidance",
     },
@@ -35,13 +41,8 @@ export const servicesData = [
       description: "Navigate your life's journey with expert guidance. Discover your purpose and create a fulfilling life",
       icon: "community",
       url: "/life-coach/life-guide",
-    },
-    {
-      title: "Dispute Settlement/Mediation",
-      description: "Resolve conflicts and find peaceful solutions through expert mediation and conflict resolution techniques",
-      icon: "sparks",
-      url: "/life-coach/dispute-settlement-mediation",
-    },
+    }
+    
   ];
   
   export const profoundnessFactorData = [
