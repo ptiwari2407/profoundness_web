@@ -1,0 +1,78 @@
+---
+// Define the benefit item interface
+interface BenefitItem {
+  id?: string | number;
+  title: string;
+  description: string;
+  icon: string;
+  iconBgColor: string;
+  iconTextColor: string;
+}
+
+// Define the component props
+interface Props {
+  title: string;
+  subtitle: string;
+  benefits: BenefitItem[];
+  containerClass?: string;
+  titleClass?: string;
+  subtitleClass?: string;
+}
+
+// Get props with defaults
+const {
+  title,
+  subtitle,
+  benefits,
+  containerClass = "pt-10 pb-[1.125rem] bg-white dark:bg-gray-900",
+  titleClass = "text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-3 leading-tight",
+  subtitleClass = "text-lg text-gray-600 dark:text-gray-300 mt-2 leading-normal max-w-4xl mx-auto"
+} = Astro.props as Props;
+
+// Helper function to get a unique ID for each benefit
+const getBenefitId = (benefit: BenefitItem, index: number): string | number => {
+  return benefit.id !== undefined ? benefit.id : `benefit-${index}`;
+};
+---
+
+<section class:list={["w-screen relative left-1/2 right-1/2 mx-[-50vw]", containerClass]}>
+  <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center mb-12 max-w-5xl mx-auto">
+      <h2 class={titleClass}>
+        <slot name="title">{title}</slot>
+      </h2>
+      {subtitle && (
+        <p class={subtitleClass}>
+          <slot name="subtitle">{subtitle}</slot>
+        </p>
+      )}
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      {benefits.map((benefit, index) => {
+        const itemId = getBenefitId(benefit, index);
+        return (
+          <div class="group" data-id={itemId}>
+            <div class="h-full p-8 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-2xl transition-colors duration-300">
+              <div class="flex items-start space-x-6">
+                <div class="flex-shrink-0 p-4 rounded-xl" style={`background-color: ${benefit.iconBgColor}80;`}>
+                  <div class="w-10 h-10" style={`color: ${benefit.iconTextColor};`} set:html={benefit.icon} />
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3">
+                    {benefit.title}
+                  </h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+    
+    <slot name="cta" />
+  </div>
+</section>

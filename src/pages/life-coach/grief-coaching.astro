@@ -1,6 +1,7 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSlider from "@/components/sections/HeroSlider.astro";
+import BenefitsBanner from "@/components/sections/BenefitsBanner.astro";
 
 const title = "Grief Coaching";
 const customDescription = "Find healing and support through your grief journey with compassionate and expert guidance";
@@ -231,6 +232,61 @@ const heroSlides = [
         </div>
       </div>
     </section>
+
+    <!-- Benefits of Grief Coaching -->
+    <div class="w-screen relative left-1/2 right-1/2 mx-[-50vw] py-16 bg-white dark:bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <BenefitsBanner
+          title="Find Healing and Hope"
+          subtitle="Discover how our grief coaching can support you through your healing journey"
+          benefits={[
+            {
+              title: "Emotional Support",
+              description: "Receive compassionate guidance as you navigate the complex emotions of grief",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>',
+              iconBgColor: "#4f46e5",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Coping Strategies",
+              description: "Learn healthy ways to manage grief and find moments of peace",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>',
+              iconBgColor: "#10b981",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Personalized Guidance",
+              description: "Get tailored support that honors your unique grief experience",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>',
+              iconBgColor: "#8b5cf6",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Healing Process",
+              description: "Move through grief at your own pace with professional support",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>',
+              iconBgColor: "#ec4899",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Memory Integration",
+              description: "Find meaningful ways to honor and remember your loved one",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>',
+              iconBgColor: "#f59e0b",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Renewed Hope",
+              description: "Discover a path forward while cherishing the love and memories you hold",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>',
+              iconBgColor: "#6366f1",
+              iconTextColor: "#ffffff"
+            }
+          ]}
+          containerClass="pt-0 pb-0"
+        />
+      </div>
+    </div>
 
     <section class="py-16 px-4 rounded-2xl bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-100 mb-10 border border-blue-100 shadow-lg">
       <div class="max-w-4xl mx-auto text-center">
