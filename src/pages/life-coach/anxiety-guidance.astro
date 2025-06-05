@@ -1,6 +1,7 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSlider from "@/components/sections/HeroSlider.astro";
+import BenefitsBanner from "@/components/sections/BenefitsBanner.astro";
 
 const title = "Anxiety Guidance";
 const customDescription = "Find peace and calm with expert anxiety guidance. Learn effective strategies to manage anxiety and reclaim your life";
@@ -231,6 +232,61 @@ const heroSlides = [
         </div>
       </div>
     </section>
+
+    <!-- Health & Wellbeing Section -->
+    <div class="w-screen relative left-1/2 right-1/2 mx-[-50vw] py-16 bg-white dark:bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <BenefitsBanner
+          title="Benefits of Anxiety Guidance"
+          subtitle="Discover how our anxiety management approach can help you find peace and emotional balance"
+          benefits={[
+            {
+              title: "Reduced Anxiety Symptoms",
+              description: "Learn effective techniques to manage and reduce the intensity of anxiety symptoms in daily life.",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>',
+              iconBgColor: "#4f46e5",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Improved Sleep Quality",
+              description: "Develop healthy sleep habits and relaxation techniques to combat anxiety-related insomnia.",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>',
+              iconBgColor: "#8b5cf6",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Better Stress Management",
+              description: "Acquire practical tools to manage stress and prevent it from escalating into anxiety.",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>',
+              iconBgColor: "#10b981",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Increased Self-Confidence",
+              description: "Build confidence in your ability to handle anxious thoughts and challenging situations.",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>',
+              iconBgColor: "#f59e0b",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Enhanced Focus & Clarity",
+              description: "Improve your ability to concentrate and think clearly by reducing anxiety's mental fog.",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>',
+              iconBgColor: "#ec4899",
+              iconTextColor: "#ffffff"
+            },
+            {
+              title: "Healthier Relationships",
+              description: "Improve your connections with others by managing anxiety that affects your interactions.",
+              icon: '<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>',
+              iconBgColor: "#6366f1",
+              iconTextColor: "#ffffff"
+            }
+          ]}
+          containerClass="pt-0 pb-0"
+        />
+      </div>
+    </div>
 
     <section class="py-16 px-4 rounded-2xl bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-100 mb-10 border border-blue-100 shadow-lg">
       <div class="max-w-4xl mx-auto text-center">
