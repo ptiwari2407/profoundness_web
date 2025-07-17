@@ -1,0 +1,93 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import HeroSlider from '../components/sections/HeroSlider.astro';
+
+const title = "Join the Profoundness Movement";
+const description = "Be part of a community exploring the depths of human existence and consciousness.";
+---
+
+<MainLayout title={title} description={description}>
+  <main class="min-h-screen bg-white dark:bg-gray-900">
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Join the <span class="text-orange-500">Profoundness</span> Movement
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {description}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is the Movement -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl mb-12">
+            What is the Profoundness Movement?
+          </h2>
+          <div class="mt-6 text-lg text-gray-600 dark:text-gray-300 space-y-8 max-w-4xl mx-auto text-left">
+            <p>
+              The Profoundness Movement is a global community of individuals committed to exploring the deeper dimensions of human existence. We believe that true fulfillment comes from understanding our place in the universe and connecting with others on a meaningful level.
+            </p>
+            <p>
+              Our movement brings together thinkers, seekers, and change-makers who are passionate about personal growth, philosophical inquiry, and creating positive change in the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Get Involved -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+          How to Get Involved
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="text-orange-500 text-4xl mb-4">1</div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Join Our Community</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Connect with like-minded individuals in our online forums and local meetups to share insights and experiences.
+            </p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="text-orange-500 text-4xl mb-4">2</div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Explore Our Resources</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Access our library of articles, guides, and tools designed to support your journey of self-discovery.
+            </p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="text-orange-500 text-4xl mb-4">3</div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Attend Events</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Participate in our workshops, retreats, and speaking events featuring thought leaders in philosophy and personal development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-orange-600 dark:bg-orange-700">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          <span class="block">Ready to begin your journey?</span>
+          <span class="block text-orange-100">Join us today.</span>
+        </h2>
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <div class="inline-flex rounded-md shadow">
+            <a href="/contact" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-orange-50">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</MainLayout>

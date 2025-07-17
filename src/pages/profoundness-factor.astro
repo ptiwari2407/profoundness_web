@@ -1,0 +1,106 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+const title = "The Profoundness Framework";
+const description = "Explore your life's purpose and personal growth journey with our comprehensive framework.";
+---
+
+<MainLayout title={title} description={description}>
+  <main class="min-h-screen bg-white dark:bg-gray-900">
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            The <span class="text-orange-500">Profoundness</span> Framework
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {description}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Framework Overview -->
+    <section class="py-16 bg-white dark:bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl mb-12">
+            Understanding the Framework
+          </h2>
+          <div class="mt-6 text-lg text-gray-600 dark:text-gray-300 space-y-8 max-w-4xl mx-auto text-left">
+            <p>
+              The Profoundness Framework is a comprehensive approach to personal development that helps individuals navigate their journey toward deeper meaning and fulfillment. It's built on four key pillars that work together to create a balanced and purposeful life.
+            </p>
+          </div>
+        </div>
+
+        <!-- Four Pillars -->
+        <div class="mt-16 grid md:grid-cols-2 gap-8">
+          <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="text-orange-500 text-2xl font-bold mb-3">1. Self-Discovery</div>
+            <p class="text-gray-600 dark:text-gray-300">
+              Uncover your true self, values, and purpose through guided introspection and reflective practices.
+            </p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="text-orange-500 text-2xl font-bold mb-3">2. Mindful Awareness</div>
+            <p class="text-gray-600 dark:text-gray-300">
+              Develop present-moment awareness to enhance your experience of life and improve decision-making.
+            </p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="text-orange-500 text-2xl font-bold mb-3">3. Purposeful Action</div>
+            <p class="text-gray-600 dark:text-gray-300">
+              Align your daily actions with your deeper purpose to create meaningful change in your life.
+            </p>
+          </div>
+          <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="text-orange-500 text-2xl font-bold mb-3">4. Community Connection</div>
+            <p class="text-gray-600 dark:text-gray-300">
+              Build meaningful relationships with others on a similar journey of growth and discovery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+          How the Framework Works
+        </h2>
+        <div class="prose dark:prose-invert max-w-4xl mx-auto">
+          <p class="text-lg">
+            The Profoundness Framework isn't a one-size-fits-all solution but rather a flexible guide that adapts to your unique journey. Here's how you can apply it:
+          </p>
+          <ol class="list-decimal pl-5 space-y-4 mt-6">
+            <li><strong>Assessment:</strong> Begin by evaluating your current state across the four pillars.</li>
+            <li><strong>Goal Setting:</strong> Identify areas for growth and set meaningful objectives.</li>
+            <li><strong>Implementation:</strong> Apply the framework's principles through daily practices.</li>
+            <li><strong>Reflection:</strong> Regularly assess your progress and adjust your approach.</li>
+            <li><strong>Evolution:</strong> As you grow, the framework evolves with you, offering new insights and challenges.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-orange-600 dark:bg-orange-700">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          <span class="block">Ready to explore the framework?</span>
+          <span class="block text-orange-100">Start your journey today.</span>
+        </h2>
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <div class="inline-flex rounded-md shadow">
+            <a href="/contact" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-orange-600 bg-white hover:bg-orange-50">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</MainLayout>
