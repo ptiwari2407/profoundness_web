@@ -24,6 +24,12 @@ export const resourcesData = [
     icon: "hammer",
     url: "/resources/recommended-study-lists",
   },
+  {
+    title: "Profoundness Guides",
+    description: "Network of life-guides helping humans find profoundness in life",
+    icon: "hammer",
+    url: "/resources/profoundness-guides",
+  },
 
 ];
 
@@ -31,9 +37,9 @@ export const resourcesFactorData = [
   {
     image:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    alt: "Profoundness Factor",
-    description:
-      "Explore your life's purpose and personal growth journey",
-    learnMoreUrl: "/profoundness/factor",
+    alt: "Profoundness Movement",
+    title: "Be a part of Profoundness Movement",
+    description: "Be part of a community exploring the depths of human existence and consciousness.",
+    learnMoreUrl: "/profoundness-movement",
   },
 ];

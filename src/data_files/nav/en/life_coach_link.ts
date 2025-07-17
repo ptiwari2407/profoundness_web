@@ -52,7 +52,7 @@ export const servicesData = [
       alt: "Profoundness Factor",
       description:
         "Explore your life's purpose and personal growth journey",
-      learnMoreUrl: "/profoundness/factor",
+      learnMoreUrl: "/profoundness-factor",
     },
   ];
   
