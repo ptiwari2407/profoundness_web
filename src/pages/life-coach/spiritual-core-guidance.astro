@@ -285,51 +285,71 @@ const heroSlides = [
       </div>
     </div>
 
-    <section class="py-16 px-4 rounded-2xl bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-100 mb-10 border border-blue-100 shadow-lg">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-800 inline-block text-transparent bg-clip-text">Begin Your Spiritual Journey Today</h2>
-        <div class="w-32 h-1.5 bg-gradient-to-r from-blue-400 via-indigo-500 to-blue-700 mx-auto mb-8 rounded-full shadow-sm"></div>
-        
-        <p class="text-xl text-gray-700 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Take the first step toward deeper spiritual connection and personal growth. Our spiritual guides are ready to support you on this transformative journey.
-        </p>
-        
-        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-          <a href="/contact" class="inline-block bg-gradient-to-r from-blue-500 via-indigo-600 to-blue-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-white/20">
-            Schedule Your Consultation
-          </a>
-          <a href="#services" class="inline-block bg-white text-blue-700 font-semibold px-8 py-4 rounded-lg shadow border-2 border-blue-200 hover:border-blue-300 transition-all duration-300 hover:bg-blue-50">
-            Learn More
-          </a>
+    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] -mb-4">
+      <section class="relative py-20 px-4 overflow-hidden h-[500px] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80" 
+            alt="Serene nature landscape with sunlight through trees"
+            class="w-full h-full object-cover"
+          />
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/80 to-blue-900/70 mix-blend-multiply"></div>
         </div>
         
-        <div class="mt-12 flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-8 text-gray-600">
-          <div class="flex items-center group">
-            <div class="p-1.5 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 mr-3 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <!-- Content -->
+        <div class="relative max-w-4xl mx-auto text-center px-6 w-full">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Begin Your Spiritual Journey Today
+          </h2>
+          <div class="w-32 h-1.5 bg-gradient-to-r from-blue-300 via-indigo-300 to-blue-400 mx-auto mb-8 rounded-full shadow-sm"></div>
+          
+          <p class="text-xl md:text-2xl font-medium text-white/95 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+            Take the first step toward deeper spiritual connection and personal growth. Our spiritual guides are ready to support you on this transformative journey.
+          </p>
+          
+          <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+            <a href="/contact" class="inline-flex items-center px-8 py-4 border-2 border-transparent text-lg font-semibold rounded-md text-blue-900 bg-orange-400 hover:bg-orange-300 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              Schedule Your Consultation
+              <svg class="ml-2 -mr-1 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
-            </div>
-            <span class="group-hover:text-blue-700 transition-colors duration-300">Certified Spiritual Guides</span>
+            </a>
+            <a href="#services" class="inline-flex items-center px-8 py-4 border-2 border-white/30 text-lg font-semibold rounded-md text-white bg-transparent hover:bg-white/10 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              Learn More
+            </a>
           </div>
-          <div class="flex items-center group">
-            <div class="p-1.5 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 mr-3 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+          
+          <div class="mt-12 flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-8 text-white/90">
+            <div class="flex items-center group">
+              <div class="p-1.5 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 mr-3 group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span class="group-hover:text-white transition-colors duration-300">Certified Spiritual Guides</span>
             </div>
-            <span class="group-hover:text-blue-700 transition-colors duration-300">Personalized Approach</span>
-          </div>
-          <div class="flex items-center group">
-            <div class="p-1.5 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 mr-3 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+            <div class="flex items-center group">
+              <div class="p-1.5 rounded-full bg-gradient-to-br from-indigo-500 to-blue-600 mr-3 group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span class="group-hover:text-white transition-colors duration-300">Personalized Approach</span>
             </div>
-            <span class="group-hover:text-blue-700 transition-colors duration-300">Ongoing Support</span>
+            <div class="flex items-center group">
+              <div class="p-1.5 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 mr-3 group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span class="group-hover:text-white transition-colors duration-300">Ongoing Support</span>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+    </div>
     </section>
   </main>
 </MainLayout>
