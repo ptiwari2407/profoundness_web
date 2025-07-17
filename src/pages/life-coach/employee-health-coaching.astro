@@ -351,5 +351,69 @@ const heroSlides = [
       title="<span class='text-[#2d3a2d] dark:text-yellow-400'>Frequently</span> <span class='text-[#f25939] dark:text-[#478527]'>asked questions</span>" 
       faqs={employeeHealthFAQs} 
     />
+
+    <!-- Full Width Banner -->
+    <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] -mb-4">
+      <section class="relative py-20 px-4 overflow-hidden h-[500px] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0">
+          <img 
+            src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1950&h=1300&dpr=2" 
+            alt="Team of diverse professionals in a modern office setting"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-indigo-900/70 mix-blend-multiply"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative max-w-4xl mx-auto text-center px-6 w-full">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Ready to Transform Your Workplace?
+          </h2>
+          <div class="w-32 h-1.5 bg-gradient-to-r from-blue-300 via-indigo-300 to-blue-400 mx-auto mb-8 rounded-full shadow-sm"></div>
+          
+          <p class="text-xl md:text-2xl font-medium text-white/95 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+            Invest in your team's wellbeing and unlock their full potential with our comprehensive employee health coaching programs.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="/contact" class="px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+              Schedule a Consultation
+            </a>
+            <a href="#program-details" class="px-8 py-4 bg-transparent hover:bg-white/10 text-white font-semibold border-2 border-white rounded-full hover:scale-105 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+              Learn More
+            </a>
+          </div>
+          
+          <div class="mt-12 flex flex-wrap justify-center gap-6">
+            <div class="flex items-center group">
+              <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-2 rounded-full group-hover:from-orange-500 group-hover:to-amber-500 transition-all duration-300">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="ml-3 text-white font-medium group-hover:text-orange-200 transition-colors">Increased Productivity</span>
+            </div>
+            <div class="flex items-center group">
+              <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-2 rounded-full group-hover:from-orange-500 group-hover:to-amber-500 transition-all duration-300">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="ml-3 text-white font-medium group-hover:text-orange-200 transition-colors">Reduced Absenteeism</span>
+            </div>
+            <div class="flex items-center group">
+              <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-2 rounded-full group-hover:from-orange-500 group-hover:to-amber-500 transition-all duration-300">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <span class="ml-3 text-white font-medium group-hover:text-orange-200 transition-colors">Enhanced Team Morale</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 </MainLayout>
